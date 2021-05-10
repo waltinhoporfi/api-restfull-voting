@@ -2,7 +2,6 @@ package com.project.apirestfullvoting.controller;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,23 +9,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.project.apirestfullvoting.domain.Guideline;
-import com.project.apirestfullvoting.repository.GuidelineRepository;
+import com.project.apirestfullvoting.service.GuidelineService;
 
 @RestController
 @RequestMapping("guidelines")
 public class GuidelineController {
 
-	@Autowired
-	private GuidelineRepository guidelineRepository;
+	private final GuidelineService guidelineService;
+	
+	public GuidelineController(GuidelineService guidelineService) {
+		this.guidelineService = guidelineService;
+	}
 	
 	@GetMapping
 	public List<Guideline> list(){
-		return guidelineRepository.findAll();		
+		return guidelineService.list();		
 	}
 	
-	@PostMapping("insert")
+	@PostMapping
 	public Guideline insert(@RequestBody Guideline guideline) {			
-		return guidelineRepository.save(guideline);
+		return guidelineService.insert(guideline);
 	}
 	
 }
