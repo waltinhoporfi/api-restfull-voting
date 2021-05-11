@@ -2,6 +2,7 @@ package com.project.apirestfullvoting.controller;
 
 import java.util.List;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -27,8 +28,15 @@ public class AssociatedController {
 	}
 	
 	@PostMapping
-	public Associated insert(@RequestBody Associated a) {
-		return associatedService.insert(a);
+	public ResponseEntity<Object> insert(@RequestBody Associated associated) {
+		
+		try {			 
+			Associated retorno = associatedService.insert(associated);
+			return ResponseEntity.ok(retorno);
+		} catch (Exception e) {
+			return ResponseEntity.badRequest().body(e.getMessage());
+		}
+			
 	}
 	
 }
