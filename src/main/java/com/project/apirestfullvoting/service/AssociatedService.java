@@ -2,9 +2,12 @@ package com.project.apirestfullvoting.service;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.project.apirestfullvoting.domain.Associated;
+
+import com.project.apirestfullvoting.model.Associated;
 import com.project.apirestfullvoting.repository.AssociatedRepository;
 
 @Service
@@ -17,7 +20,7 @@ public class AssociatedService {
 		return associatedRepository.findAll();
 	}
 	
-	public Associated insert(Associated a) {
+	public Associated insert(@Valid Associated a) {
 		return associatedRepository.save(a);
 	}
 }

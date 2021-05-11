@@ -6,8 +6,9 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.project.apirestfullvoting.domain.Guideline;
-import com.project.apirestfullvoting.domain.Session;
+
+import com.project.apirestfullvoting.model.Guideline;
+import com.project.apirestfullvoting.model.Session;
 import com.project.apirestfullvoting.repository.GuidelineRepository;
 import com.project.apirestfullvoting.repository.SessionRepository;
 

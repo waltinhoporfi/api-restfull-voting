@@ -1,26 +1,33 @@
-package com.project.apirestfullvoting.domain;
+package com.project.apirestfullvoting.model;
 
-import javax.persistence.Column;
+import java.time.LocalDateTime;
+
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
-public class Guideline {
+public class Session {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(length = 150, nullable = false)
-	private String guideline;
+	private LocalDateTime startTime;
+	
+	private Long sessionMinutes;
+	
+	@ManyToOne(fetch = FetchType.EAGER)
+	private Guideline guideline;
 	
 }

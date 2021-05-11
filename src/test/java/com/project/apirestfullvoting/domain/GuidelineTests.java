@@ -3,6 +3,8 @@ package com.project.apirestfullvoting.domain;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.project.apirestfullvoting.model.Guideline;
+
 @SpringBootTest
 public class GuidelineTests {
 

@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.project.apirestfullvoting.domain.Guideline;
-import com.project.apirestfullvoting.domain.Vote;
+import com.project.apirestfullvoting.model.Guideline;
+import com.project.apirestfullvoting.model.Vote;
 
 @SpringBootTest
 public class GuidelineRepositoryTests {

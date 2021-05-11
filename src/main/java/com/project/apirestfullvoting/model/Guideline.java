@@ -1,4 +1,4 @@
-package com.project.apirestfullvoting.domain;
+package com.project.apirestfullvoting.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,19 +11,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
-public class Associated {
+public class Guideline {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(length = 11, nullable = false)
-	private String cpf;
-	
-	@Column(length = 100, nullable = false)
-	private String name;
+	@Column(length = 150, nullable = false)
+	private String guideline;
 	
 }

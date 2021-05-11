@@ -4,7 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.project.apirestfullvoting.domain.Guideline;
+
+import com.project.apirestfullvoting.model.Guideline;
 import com.project.apirestfullvoting.repository.GuidelineRepository;
 
 @Service
