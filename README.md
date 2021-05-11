@@ -37,7 +37,7 @@ Gerenciamento de sessões de votação
 
 <h2>Iniciando uma seção de votos, passando o "ano/mês/diaThora:minutos", minutos que a seção ficará aberta, e a pauta.</h2>
 <h3>4 - POST (/session)</h3>
-</code></pre>
+<pre><code>
 {
     "startTime": "2021-05-11T15:30",
     "sessionMinutes": null,
