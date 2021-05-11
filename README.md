@@ -21,7 +21,7 @@ Gerenciamento de sessões de votação
   
   
 <h2>Inserindo uma Pauta ao banco</h2>
-<h3>2 - POST (localhost:8080/guidelines)</h3>
+<h3>2 - POST (/guidelines)</h3>
 {
     "guideline": "Nome da Pauta"
 }
