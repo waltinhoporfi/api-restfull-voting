@@ -12,12 +12,13 @@ Gerenciamento de sessões de votação
 
 <h2>Inserindo um associado ao banco</h2>
 <h3>1 - POST (/associated)</h3>
+
 <pre><code>
 {
   "cpf": "11122233300",
   "name": "Walter Porfirio"
 }
-</pre></code>
+</code></pre>
   
   
 <h2>Inserindo uma Pauta ao banco</h2>
