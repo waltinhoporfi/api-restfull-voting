@@ -31,7 +31,7 @@ Gerenciamento de sessões de votação
 
 <h2>Inserindo uma votação, passando um JSON com a Pauta que deseja votar, o associado que deseja votar, e por fim seu voto.</h2>
 <h3>3 - POST (/voting)</h3>
-</code></pre>
+<pre><code>
 {"guideline": {"id": 1}, "associated": {"id": 1}, "choice": true }
 </code></pre>
 
