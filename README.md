@@ -13,10 +13,12 @@ Gerenciamento de sessões de votação
 <h2>Inserindo um associado ao banco</h2>
 <h3>1 - POST (/associated)</h3>
 <json>
+```
 {
   "cpf": "11122233300",
   "name": "Walter Porfirio"
 }
+```
 </json>
   
   
@@ -39,5 +41,9 @@ Gerenciamento de sessões de votação
     "sessionMinutes": null,
     "guideline": {"id": 1}
 }
+
+<h2>Contabilizando os votos...</h2>
+<h3>5 - GET (/sumVoting?guidelineId=1)</h3>
+KEY: guidelineId VALUE: 1
 
 
