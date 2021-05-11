@@ -1,9 +1,9 @@
 # api-restfull-voting
 Backend application for voting in assembly for members
 
-<h3>Usado Spring Boot + JPA</h3>
-<h3>Padrão MVC</h3>
-<h3>Banco MySql</h3>
+<h3>1.Usado Spring Boot + JPA</h3>
+<h3>2.Padrão MVC</h3>
+<h3>3.Banco MySql</h3>
 
 
 Gerenciamento de sessões de votação
