@@ -7,11 +7,11 @@ Gerenciamento de sessões de votação
    Métodos da aplicação:
 
 Inserindo um associado ao banco
-1 - POST (localhost:8080/associated)
-{
+<h1>1 - POST (localhost:8080/associated)</h1>
+<json>{
   "cpf": "11122233300",
   "name": "Walter Porfirio"
-}
+}</json>
   
   
 Inserindo uma Pauta ao banco
